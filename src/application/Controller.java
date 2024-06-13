@@ -16,6 +16,13 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
 
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+
 public class Controller {
     @FXML
     private TableView<ObservableList<String>> table;
@@ -37,6 +44,13 @@ public class Controller {
     private void Filter(MouseEvent event) {
     	filterEmployee();
     }
+
+
+    Parent root = FXMLLoader.load(getClass().getResource("/ui/Employeemanagement.fxml")); 
+    Scene scene = new Scene(root);
+    primaryStage.setTitle("Employee Management System");
+    primaryStage.setScene(scene);
+    primaryStage.show();
 
     
     void dataDepartment() {
