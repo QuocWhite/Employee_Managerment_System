@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Pane layoutX="-10.0" prefHeight="403.0" prefWidth="758.0">
+         <children>
+            <Label layoutX="33.0" layoutY="32.0" text="Department" />
+            <ComboBox fx:id="departmentCbx" layoutX="138.0" layoutY="26.0" prefHeight="39.0" prefWidth="215.0" promptText="Select Department" />
+            <TableView fx:id="table" layoutX="14.0" layoutY="117.0" prefHeight="200.0" prefWidth="732.0" />
+            <Button layoutX="380.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#Filter" prefHeight="39.0" prefWidth="63.0" text="Filter" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

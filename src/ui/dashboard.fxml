@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.dashboardControl">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="242.0" layoutY="91.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="45.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </top>
+               <left>
+                  <AnchorPane prefHeight="555.0" prefWidth="221.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="11.0" layoutY="-45.0" prefHeight="600.0" prefWidth="221.0" style="-fx-background-color: #3f44b5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-45.0">
+                           <children>
+                              <ImageView fitHeight="81.0" fitWidth="81.0" layoutX="67.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/logobe.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="57.0" layoutY="122.0" text="Welcome Back," textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="3.0" layoutY="155.0" prefHeight="25.0" prefWidth="209.0" text="DK Nguyen" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="100.0" layoutX="111.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
+                              <Button layoutX="24.0" layoutY="241.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="180.0" text="Home">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../img/home%20button.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="24.0" layoutY="285.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="180.0" text="Add Employee">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../img/add%20button.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="24.0" layoutY="327.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="180.0" text="Salary">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../img/salary%20button.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="31.0" layoutY="549.0" mnemonicParsing="false" prefHeight="30.0">
+                                 <graphic>
+                                    <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../img/logout%20button.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label layoutX="76.0" layoutY="563.0" text="Logout" textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="70.0" layoutY="84.0" prefHeight="555.0" prefWidth="879.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="-32.0" prefHeight="575.0" prefWidth="854.0">
+                                 <cursor>
+                                    <Cursor fx:constant="DISAPPEAR" />
+                                 </cursor>
+                                 <children>
+                                    <AnchorPane prefHeight="186.0" prefWidth="854.0" AnchorPane.bottomAnchor="389.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="161.0" prefWidth="406.0" style="-fx-background-color: #3f44b5;">
+                                             <children>
+                                                <ImageView fitHeight="76.0" fitWidth="79.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../img/logobe.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label layoutX="246.0" layoutY="117.0" text="Total Employee" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="179.0" layoutY="51.0" text="20" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="41.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="443.0" layoutY="14.0" prefHeight="161.0" prefWidth="397.0" style="-fx-background-color: #3f44b5;">
+                                             <children>
+                                                <ImageView fitHeight="76.0" fitWidth="79.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../img/logobe.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label layoutX="274.0" layoutY="117.0" text="Department" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="175.0" layoutY="51.0" text="05" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="41.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                    <Line endX="100.0" layoutX="629.0" layoutY="201.0" startX="-100.0" />
+                                    <Line endX="100.0" layoutX="202.0" layoutY="201.0" startX="-100.0" />
+                                    <TableView fx:id="tbaView" layoutX="172.0" layoutY="232.0" prefHeight="322.0" prefWidth="511.0">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" text="C1" />
+                                        <TableColumn prefWidth="75.0" text="C2" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
