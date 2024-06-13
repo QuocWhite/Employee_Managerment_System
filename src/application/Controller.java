@@ -48,22 +48,17 @@ public class Controller {
     }
 
 
-   @Override
-   public void start (Stage primaryStage) {
-    Button button = new Button("Add Employee");
-
-    button.setOnAction(evvent -> {
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("/ui/employeemanagement.fxml"));
+   @FXML
+   private void handleButtonClick (AcctionEvent event)throws IOException {
+            Parent root = FXMLLoader.load(getClass().getResource("/ui/Employeemanagement.fxml"));
             Scene scene = new Scene(root);
-            primaryStage.setTitle("Employee Management System");
-            primaryStage.setScene(scene);
-            primaryStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    });
-   }
+            Stage window = (Stage) ((Node)) event.getSource()).getScene().getWindow();
+            window.setTitle("Employee Management System");
+            window.setScene(scene);
+            window.show();
+
+    }
+
 
     
     void dataDepartment() {
