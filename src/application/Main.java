@@ -14,7 +14,7 @@ public class Main extends Application {
 		try {
 			 Parent root = FXMLLoader.load(getClass().getResource("/ui/loginDesign.fxml")); 
 	            Scene scene = new Scene(root);
-	            primaryStage.setTitle("Employee Info");
+	            primaryStage.setTitle("Employee Management System");
 	            primaryStage.setScene(scene);
 	            primaryStage.show();
 		} catch(Exception e) {

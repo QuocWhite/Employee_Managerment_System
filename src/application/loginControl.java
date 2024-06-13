@@ -41,7 +41,7 @@ public class loginControl {
 			
 			Stage primaryStage = new Stage();
 			
-			primaryStage.setTitle("Employee Management System");
+			primaryStage.setTitle("Dashboard");
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		}
