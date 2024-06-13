@@ -21,6 +21,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.VBBox;
 import javafx.scene.layout.BorderPane;
 
 public class Controller {
@@ -46,11 +48,22 @@ public class Controller {
     }
 
 
-    Parent root = FXMLLoader.load(getClass().getResource("/ui/Employeemanagement.fxml")); 
-    Scene scene = new Scene(root);
-    primaryStage.setTitle("Employee Management System");
-    primaryStage.setScene(scene);
-    primaryStage.show();
+   @Override
+   public void start (Stage primaryStage) {
+    Button button = new Button("Add Employee");
+
+    button.setOnAction(evvent -> {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/ui/employeemanagement.fxml"));
+            Scene scene = new Scene(root);
+            primaryStage.setTitle("Employee Management System");
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    });
+   }
 
     
     void dataDepartment() {
